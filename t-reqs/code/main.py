@@ -80,7 +80,7 @@ class Fuzzer:
         return list_responses
 
     def blackbox_fuzz_parallel_batch(self):
-        for j in range(5): # number of batches
+        for j in range(1): # number of batches
             num_procs = 64
             batch_size = 1000
             seeds_splitted = [[j*batch_size + i for i in list(range(i, batch_size, num_procs))] for i in range(num_procs)]
