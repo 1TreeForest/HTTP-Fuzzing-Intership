@@ -23,7 +23,7 @@ gcc --coverage -O0 test.c -o testcode
 ./testcode
 ```
 
-Then I input `1` to `5` in sequence and execute `gcov_dump_one.sh` then use `gcovr` to get the result of the execution after each entry.
+Then I input `1` to `5` in sequence and execute `gcov_dump_one.sh` then use `gcovr` to get the result of the execution after each entry. 
 
 ```shell
 sh ./gcov_dump_one.sh
@@ -60,9 +60,10 @@ python3 ./feedback-server.py
 python3 main.py -c ../full_config
 ```
 
-Finally, please use the following command again to get the code coverage.
+Finally, please use the following command again in `/HTTP-Fuzzing-Intership/nginx-1.23.1/objs/` to get the code coverage.
 
 ```shell
+sh ../../gcov_dump.sh 82
 gcovr --html -o 2.html
 ```
 
