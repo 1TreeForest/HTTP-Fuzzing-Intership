@@ -1,7 +1,7 @@
 # Required. The URL address for each target.
 # config.target_urls = ["http://192.168.157.128:80/", "http://192.168.157.128:81/", "http://192.168.157.128:82/", "http://192.168.157.128:83/", "http://192.168.157.128:84/", "http://192.168.157.128:85/"]
 
-config.target_urls = ["http://192.168.157.128:82/"]
+config.target_urls = ["http://localhost:82/"]
 
 # Required. The 'Host' header value for each target.
 # config.target_host_headers = ["localhost", "localhost", "localhost", "localhost", "localhost", "localhost"]

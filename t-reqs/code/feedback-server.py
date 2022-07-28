@@ -5,7 +5,7 @@ import sys
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-s.bind(('', 8080))
+s.bind(('', 8899))
 s.listen()
 
 def get_body(data):
